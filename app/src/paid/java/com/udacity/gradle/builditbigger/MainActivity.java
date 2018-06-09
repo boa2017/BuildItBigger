@@ -7,7 +7,7 @@ import android.widget.ProgressBar;
 
 import com.example.android.tellJokesActivity.TellJokesActivity;
 
-public class MainActivityFragment extends AppCompatActivity implements TaskFinishedCallback {
+public class MainActivity extends AppCompatActivity implements TaskFinishedCallback {
 
     private static final String JOKE_KEY = "joke";
     private ProgressBar progressBar;
