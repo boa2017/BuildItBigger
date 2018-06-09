@@ -72,8 +72,8 @@
         android:id="@+id/button_jokes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
         android:text="@string/button_jokes"
+        android:layout_below="@+id/rules"
         android:onClick="tellJoke"/>
     </RelativeLayout>
 </FrameLayout>
