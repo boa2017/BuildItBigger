@@ -24,7 +24,7 @@ class JokesAsyncTask extends AsyncTask<String, Void, String> {
         if (mJokeApi == null) {  // Only do this once
             JokeApi.Builder builder = new JokeApi.Builder(AndroidHttp.newCompatibleTransport(),
                     new AndroidJsonFactory(), null)
-                    .setRootUrl("http://192.168.1.87/_ah/api/")
+                    .setRootUrl("http://192.168.1.87:8080/_ah/api/")
                     .setGoogleClientRequestInitializer(new GoogleClientRequestInitializer() {
                         @Override
                         public void initialize(AbstractGoogleClientRequest<?> abstractGoogleClientRequest) throws IOException {
