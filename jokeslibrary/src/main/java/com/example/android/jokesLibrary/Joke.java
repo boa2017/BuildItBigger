@@ -47,23 +47,21 @@ import java.util.Random;
 
 public class Joke {
 
-    private List<String> jokes;
-    private int previousIndex;
+    private static final List<String> jokes = new ArrayList<>();
+    private static final Random rand = new Random();
 
-    public Joke() {
-        this.jokes = new ArrayList<>();
-        this.jokes.add("What's the best thing about Switzerland? I don't know, but the flag is a big plus.");
-        this.jokes.add("Did you hear about the mathematician who's afraid of negative numbers? He'll stop at nothing to avoid them.");
-        this.jokes.add("Did you hear about the claustrophobic astronaut? He just needed a little space.");
-        this.jokes.add("Hear about the new restaurant called Karma? There’s no menu: You get what you deserve.");
-        this.jokes.add("Why don’t scientists trust atoms? Because they make up everything.");
-        this.jokes.add("Where are average things manufactured? The satisfactory.");
+    static {
+        jokes.add("What's the best thing about Switzerland? I don't know, but the flag is a big plus.");
+        jokes.add("Did you hear about the mathematician who's afraid of negative numbers? He'll stop at nothing to avoid them.");
+        jokes.add("Did you hear about the claustrophobic astronaut? He just needed a little space.");
+        jokes.add("Hear about the new restaurant called Karma? There’s no menu: You get what you deserve.");
+        jokes.add("Why don’t scientists trust atoms? Because they make up everything.");
+        jokes.add("Where are average things manufactured? The satisfactory.");
 
     }
 
-    public String tellAJoke() {
-        Random random = new Random();
-        return jokes.get(random.nextInt(jokes.size() - 1));
+    public String getJoke() {
+        int index = rand.nextInt(jokes.size());
+        return jokes.get(index);
     }
-
 }

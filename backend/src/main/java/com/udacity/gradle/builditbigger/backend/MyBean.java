@@ -41,19 +41,19 @@
 
 package com.udacity.gradle.builditbigger.backend;
 
-import com.example.android.jokesLibrary.Joke;
-
-/** The object model for the data we are sending through endpoints */
-
+/**
+ * The object model for the data we are sending through endpoints
+ */
+@SuppressWarnings("unused")
 public class MyBean {
 
-    private Joke joke;
+    private String myData;
 
-    public MyBean() {
-        joke = new Joke();
+    public String getData() {
+        return myData;
     }
 
-    public String getJoke() {
-        return joke.tellAJoke();
+    public void setData(String data) {
+        myData = data;
     }
 }

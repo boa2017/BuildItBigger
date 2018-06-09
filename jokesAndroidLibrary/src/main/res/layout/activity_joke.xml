@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
   ~ /*
   ~  * PROJECT LICENSE
   ~  *
@@ -40,37 +39,20 @@
   ~  */
   -->
 
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout
+ xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.android.tellJokesActivity.TellJokesActivity">
 
     <TextView
-        android:id="@+id/jokeTag"
-        android:layout_width="wrap_content"
+        android:id="@+id/joke_value"
+        style="@style/Base.TextAppearance.AppCompat.Body2"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginEnd="@dimen/margins_default"
         android:layout_marginStart="@dimen/margins_default"
-        android:layout_marginTop="@dimen/margins_default"
-        android:text="@string/joke"
-        android:textSize="@dimen/xl_font"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/jokeValue"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="@dimen/margins_default"
-        android:layout_marginEnd="@dimen/margins_default"
-        android:layout_marginStart="@dimen/margins_default"
-        android:layout_marginTop="@dimen/margins_default"
         android:textSize="@dimen/large_font"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/jokeTag" />
-</android.support.constraint.ConstraintLayout>
+        android:gravity="center" />
+</LinearLayout>

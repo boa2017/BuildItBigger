@@ -41,8 +41,6 @@
 
 <resources>
     <string name="app_name">Funny Jokes</string>
+    <string name="joke_tag">Joke</string>
 
-    <!-- Activity Joke -->
-
-    <string name="joke">Joke</string>
 </resources>

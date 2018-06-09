@@ -24,10 +24,27 @@
    "httpMethod": "GET",
    "id": "jokeApi.getJoke",
    "path": "mybean",
-   "request": {
-    "$ref": "MyBean",
-    "parameterName": "resource"
+   "response": {
+    "$ref": "MyBean"
    },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "sayHi": {
+   "httpMethod": "POST",
+   "id": "jokeApi.sayHi",
+   "parameterOrder": [
+    "name"
+   ],
+   "parameters": {
+    "name": {
+     "location": "path",
+     "required": true,
+     "type": "string"
+    }
+   },
+   "path": "sayHi/{name}",
    "response": {
     "$ref": "MyBean"
    },
@@ -90,7 +107,7 @@
   "MyBean": {
    "id": "MyBean",
    "properties": {
-    "joke": {
+    "data": {
      "type": "string"
     }
    },

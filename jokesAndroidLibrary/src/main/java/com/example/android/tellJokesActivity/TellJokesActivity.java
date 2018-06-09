@@ -47,24 +47,23 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
 public class TellJokesActivity extends AppCompatActivity {
-    public static final String EXTRA_JOKE = "EXTRA_JOKE";
-
-    private TextView jokeTV;
+    private static final String JOKE_KEY = "joke";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_joke);
-        jokeTV = findViewById(R.id.jokeValue);
 
-        displayJoke();
-    }
-
-    private void displayJoke() {
         Intent intent = getIntent();
-        if (intent != null && intent.hasExtra(EXTRA_JOKE)) {
-            String joke = intent.getStringExtra(EXTRA_JOKE);
-            jokeTV.setText(joke);
+
+        TextView jokeTextView = (TextView) findViewById(R.id.joke_value);
+
+        if (intent.hasExtra(JOKE_KEY)) {
+            String jokeValue = intent.getStringExtra(JOKE_KEY);
+
+            if (jokeValue != null && jokeValue.length() != 0) {
+                jokeTextView.setText(jokeValue);
+            }
         }
     }
 }

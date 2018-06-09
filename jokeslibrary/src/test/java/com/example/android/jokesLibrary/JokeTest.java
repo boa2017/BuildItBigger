@@ -58,7 +58,7 @@ public class JokeTest {
         Joke jokes = new Joke();
 
         for (int i = 0; i < iterations; i++) {
-            String joke = jokes.tellAJoke();
+            String joke = jokes.getJoke();
             assertThat(joke, not(isEmptyOrNullString()));
         }
     }

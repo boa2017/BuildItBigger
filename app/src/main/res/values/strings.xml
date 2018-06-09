@@ -5,6 +5,6 @@
     <string name="rules">Press the button for a funny joke!</string>
     <string name="button_jokes">Tell Joke</string>
     <string name="action_settings">Settings</string>
-    <string name="failed_loading_joke">Oops! Server failed to load joke</string>
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
 
 </resources>
