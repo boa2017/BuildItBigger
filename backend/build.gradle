@@ -37,7 +37,10 @@ dependencies {
 }
 
 appengine {  // App Engine tasks configuration
-    tools.cloudSdkHome="C:\\Program Files (x86)\\Google\\google-cloud-sdk"
+    tools.cloudSdkHome = "C:\\Program Files (x86)\\Google\\google-cloud-sdk"
+    run {
+        host = "0.0.0.0"
+    }
 }
 
 
