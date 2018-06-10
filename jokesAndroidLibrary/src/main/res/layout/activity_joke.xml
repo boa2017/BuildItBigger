@@ -39,8 +39,7 @@
   ~  */
   -->
 
-<LinearLayout
- xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -53,6 +52,6 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="@dimen/margins_default"
         android:layout_marginStart="@dimen/margins_default"
-        android:textSize="@dimen/large_font"
-        android:gravity="center" />
+        android:gravity="center"
+        android:textSize="@dimen/large_font" />
 </LinearLayout>

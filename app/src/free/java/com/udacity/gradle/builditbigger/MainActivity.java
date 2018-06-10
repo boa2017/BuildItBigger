@@ -15,7 +15,7 @@ import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.InterstitialAd;
 
-public class MainActivity extends AppCompatActivity implements TaskFinishedCallback  {
+public class MainActivity extends AppCompatActivity implements TaskFinishedCallback {
 
     private static final String JOKE_KEY = "joke";
     private ProgressBar progressBar;
